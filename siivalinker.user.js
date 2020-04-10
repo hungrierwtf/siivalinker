@@ -8,6 +8,7 @@
 // @match        https://www.youtube.com/*
 // @connect      siivagunner.fandom.com
 // @grant        GM_xmlhttpRequest
+// @homepageURL  https://github.com/hungrierwtf/siivalinker
 // @downloadURL  https://github.com/hungrierwtf/siivalinker/raw/master/siivalinker.user.js
 // ==/UserScript==
 
@@ -91,7 +92,14 @@
       putLinkel();
     }
     
-    linkel.href = href;
+    if (href) {
+      linkel.href = href;
+    } else {
+      delete linkel.href;
+    }
+    
+    
+    
     console.log('link updated', href);
   }
   
@@ -111,7 +119,7 @@
         updateLink(wikiUrl);
       } else {
         dbg('no suggestion', resObj);
-        updateLink('');
+        updateLink();
       }
     } else {
       console.log('something bad hapepned', res);
