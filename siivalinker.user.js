@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Siiva linker
 // @namespace    https://hungrierwtf.github.io/
-// @version      0.6
+// @version      0.7
 // @description  Adds a SiIvaGunner wiki link to SiIvaGunner videos on Youtube
 // @author       hungrier
 // @match        http://www.youtube.com/*
 // @match        https://www.youtube.com/*
 // @connect      siivagunner.fandom.com
 // @grant        GM_xmlhttpRequest
+// @downloadURL  https://github.com/hungrierwtf/siivalinker/raw/master/siivalinker.user.js
 // ==/UserScript==
 
 "use strict";
