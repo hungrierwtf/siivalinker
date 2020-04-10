@@ -110,7 +110,7 @@
         updateLink(wikiUrl);
       } else {
         dbg('no suggestion', resObj);
-        updateLink();
+        updateLink('');
       }
     } else {
       console.log('something bad hapepned', res);
