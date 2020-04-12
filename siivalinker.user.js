@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Siiva linker
 // @namespace    https://hungrierwtf.github.io/
-// @version      0.7.1
+// @version      0.8
 // @description  Adds a SiIvaGunner wiki link to SiIvaGunner videos on Youtube
 // @author       hungrier
 // @match        http://www.youtube.com/*
@@ -138,9 +138,25 @@
     GM_xmlhttpRequest(xhrOptions);
   }
   
+  const processTitle = function(title) {
+    if (!title) {
+      return title;
+    }
+    
+    title = title.trim();
+    dbg('trimmed', title);
+    
+    title = title.replace('#', '');
+    dbg('de-numberized', title);
+    
+    return title;
+  }
+  
   const getLink = function() {
     if (status.siiva) {
-      startGetSuggestion(status.title);
+      const query = processTitle(status.title);
+      dbg('processed', status.title, '->', query);
+      startGetSuggestion(query);
     }
   }
 
