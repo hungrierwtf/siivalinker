@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Siiva linker
 // @namespace    https://hungrierwtf.github.io/
-// @version      0.9
+// @version      0.9.1
 // @description  Adds a SiIvaGunner wiki link to SiIvaGunner videos on Youtube
 // @author       hungrier
 // @match        http://www.youtube.com/*
@@ -26,7 +26,7 @@
     siiva: false
   };
   
-  const channels = ['SiIvaGunner'];
+  const channels = ['SiIvaGunner', 'Flustered Fernando'];
   
   const suggestionUrl = new URL('https://siivagunner.fandom.com/wikia.php');
   suggestionUrl.searchParams.set('controller', 'LinkSuggest');
