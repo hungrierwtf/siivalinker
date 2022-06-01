@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Siiva linker
 // @namespace    https://hungrierwtf.github.io/
-// @version      0.9.1
+// @version      0.9.2
 // @description  Adds a SiIvaGunner wiki link to SiIvaGunner videos on Youtube
 // @author       hungrier
 // @match        http://www.youtube.com/*
@@ -51,7 +51,7 @@
         return;
       }
       
-      const titleEl = document.querySelector('#info-contents .title');
+      const titleEl = document.querySelector('div#above-the-fold div#title.ytd-watch-metadata h1');
       if (!titleEl) {
         console.log('no title el to attach');
         return;
