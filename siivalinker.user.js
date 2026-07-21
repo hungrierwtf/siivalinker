@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name         Siiva linker
 // @namespace    https://hungrierwtf.github.io/
-// @version      1.0.0
+// @version      1.0.2
 // @description  Adds a SiIvaGunner wiki link to SiIvaGunner videos on Youtube
 // @author       hungrier
 // @match        http://www.youtube.com/*
 // @match        https://www.youtube.com/*
-// @connect      siivagunner.fandom.com
 // @connect      siivagunner.wiki
 // @grant        GM_xmlhttpRequest
 // @homepageURL  https://github.com/hungrierwtf/siivalinker
 // @updateURL    https://github.com/hungrierwtf/siivalinker/raw/master/siivalinker.meta.js
 // @downloadURL  https://github.com/hungrierwtf/siivalinker/raw/master/siivalinker.user.js
+// @license      MIT
 // ==/UserScript==
 
 "use strict";
