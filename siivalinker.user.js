@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Siiva linker
 // @namespace    https://hungrierwtf.github.io/
-// @version      1.0.2
+// @version      1.0.3
 // @description  Adds a SiIvaGunner wiki link to SiIvaGunner videos on Youtube
 // @author       hungrier
 // @match        http://www.youtube.com/*
